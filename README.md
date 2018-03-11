@@ -1,15 +1,6 @@
 # Sequel
->> Hello fieofhe
+>> Hello fieofhe gfreiojhjdfghjkfdhgjfghfjhkjjkdhkjghfhgjdfhgjkdfshkgjsfdjhgjkfhsdgjshfjgkhdfjghjskdfhjgksfdhkgjfdkhsglsjkfhdgkjhdfkjhgjfdghjfdhgjdsfhgjklfshdjgkhfsdgkjhsfdghfsdghfkgdh
 
-fe
-f
-e
-f
-ef
-e
-f
-ef
-e
 Project Sequel
 Reference: https://docs.oracle.com/cd/B19306_01/server.102/b14200/toc.htm <br>
 Reference: https://www.w3schools.com/sql/default.asp
