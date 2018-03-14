@@ -5,7 +5,7 @@ or for stream processing in a relational data stream management system.
 
 ### Oracle SQL Developer
 
-![Oracle Database] (https://goo.gl/images/oD6rkb)
+![Oracle Database] (https://d1q6f0aelx0por.cloudfront.net/product-logos/5bcd5843-553f-4478-8673-a085b002f0c4O_Database_clr.png)
 
 
 Oracle SQL Developer is an *Integrated development Evnvironment(IDE)* for working with SQL in Oracle database.Orcale Corporation 
@@ -22,7 +22,7 @@ We would be working on Oracle
 ### DIFFERENCE BETWEEN MICROSFT SQL SERVER AND ORACLE
 
 
-![Microsoft SQL Server vs Oracle] (https://goo.gl/images/SMaQin)
+![Microsoft SQL Server vs Oracle] (https://ekiy5aot90-flywheel.netdna-ssl.com/wp-content/uploads/2014/03/segue-blog-microsoft-sql-server-vs-oracle.png)
 
 
 * **Language** - Although both systems use a version of **Structured Query Language(SQL)**, **MS SQL Server** uses **Transant SQL**,or **T-SQL**,
