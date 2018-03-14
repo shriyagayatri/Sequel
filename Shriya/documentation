@@ -1,5 +1,5 @@
 ## *DOCUMENTATION ON ORACLE SQL*
-**SQL stands for Standard Query Language**
+**SQL stands for Standard Query Language. Often reffered as SEQUEL**
 **SQL** is a domain-specific language used in programming and designed for managing data held in a relational database management system(RDBMS),
 or for stream processing in a relational data stream management system.
 
@@ -25,7 +25,7 @@ We would be working on Oracle
 ![Microsoft SQL Server vs Oracle] (https://goo.gl/images/SMaQin)
 
 
-* **Language** - Although both systems use a version of **Structured Query Language(SQL)**,**MS SQL Server** uses **Transant SQL**,or **T-SQL**,
+* **Language** - Although both systems use a version of **Structured Query Language(SQL)**, **MS SQL Server** uses **Transant SQL**,or **T-SQL**,
            which is an extensin of SQL originally developed by *Sybase* and used by Microsoft.
            **Oracle**,on the other hand uses **PL/SQL**, or **Procedural Language/SQL**.
            *For more information about PL/SQL you can visit the following link* - <https://en.wikipedia.org/wiki/PL/SQL>
