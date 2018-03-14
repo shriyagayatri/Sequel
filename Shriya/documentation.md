@@ -22,7 +22,7 @@ We would be working on Oracle
 ### DIFFERENCE BETWEEN MICROSFT SQL SERVER AND ORACLE
 
 
-![alt text] (https://ekiy5aot90-flywheel.netdna-ssl.com/wp-content/uploads/2014/03/segue-blog-microsoft-sql-server-vs-oracle.png)
+![alt text](https://ekiy5aot90-flywheel.netdna-ssl.com/wp-content/uploads/2014/03/segue-blog-microsoft-sql-server-vs-oracle.png)
 
 
 * **Language** - Although both systems use a version of **Structured Query Language(SQL)**, **MS SQL Server** uses **Transant SQL**,or **T-SQL**,
