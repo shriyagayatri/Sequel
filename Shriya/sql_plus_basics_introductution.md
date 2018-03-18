@@ -9,16 +9,18 @@ To start SQLPLUS following command is used
 > SPOOL OP_TXT
   SELECT * 
  FROM company;
- * SPOOL OFF; *
+  *SPOOL OFF;*
 
 Here,the output of the query SELECT * FROM COMPANY goes to the file OP_TXT . to close the file,
-the command ** SPOOL OFF ** is used . By default spool file has the extension * .LST * . So the file created,
+the command **SPOOL OFF** is used . By default spool file has the extension *.LST* . So the file created,
 in this case,will be * OP_TXT.LST * present in the bin directory.
 
 
 ### COMMAND FOR CREATING TABLE
 
-> ** CREATE TABLE <table name> (<column1><type>, <column2><type>,....); **
+ **CREATE TABLE <table name> (<column1><type>, <column2><type>,....);**
+  
+  
 
 > Example:
         CREATE TABLE emp_company
@@ -26,7 +28,7 @@ in this case,will be * OP_TXT.LST * present in the bin directory.
 
 ### DESCRIBE COMMAND
 
-** DESCRIBE emp_company; **
+**DESCRIBE emp_company;**
 
 
 
@@ -36,22 +38,22 @@ in this case,will be * OP_TXT.LST * present in the bin directory.
 
 ### INSERTING DATA IN TABLE
 
-> ** INSERT [into] {table_name} [(coloumn_list)] **
-  ** VALUES (expression [ ,...n]); **
+ **INSERT [into] {table_name} [(coloumn_list) **
+  **VALUES (expression [ ,...n]);**
 
 > Example:
         INSERT INTO company VALUES ('acc','bombay');
 
-* To change the order in which data is inserted it should be specified explicitly *
+*To change the order in which data is inserted it should be specified explicitly*
 
 > Example:
         INSERT INTO company(city,cname)
         VALUES ('bombay','acc');
 
-** //Using Substitution Variable **
+**//Using Substitution Variable**
 
-> INSERT INTO company 
-  VALUES (&cname,&city);            * [& indicates substitution values] *
+**INSERT INTO company 
+  VALUES (&cname,&city);**           *[& indicates substitution values]*
 
 [The statement prompts the value of cname and city]
 
@@ -60,31 +62,31 @@ Result:
        Enter the value of city: 'nagpur'
 
 Enter the above value and press enter, a message will popup stating 'row created'.
-anothe rrecord can be inserted in the same table just by typing ** 'RUN' ** at the SQL prompt.
+anothe rrecord can be inserted in the same table just by typing **'RUN'** at the SQL prompt.
 
-> ** RUN; **
+**RUN;**
   (or)
-  ** SQL>/ **
+  **SQL>/**
 
-** NOTE-The combination of RUN and & can be used for fast insertion **
+**NOTE-The combination of RUN and & can be used for fast insertion**
 
 ### SELECT STATEMENT WITH CONDITION
 
-> ** SELECT col1,col2 **
-  ** FROM t1,t2.... **
-  ** WHERE<condition>; ** 
+ **SELECT col1,col2**
+  **FROM t1,t2....**
+  **WHERE<condition>;** 
 
-** NOTE-The WHERE condition should be a bolean expression that returns true or false.
+> NOTE-The WHERE condition should be a bolean expression that returns true or false.
    Multilpe conditions can be combined using AND,OR and NOT operators. **
 
-** NOTE- SELECT cname company name FROM company;
+>  NOTE- SELECT cname company name FROM company;
       is same as   
       SELECT cname AS companyname FROM company; **
 
 ### USING TABLE ALIAS
 
-> **TABLENAME.COLOUMNNAME [IF ALIAS IS NOT MENTIONED]
-  ALIASNAME.COLOUMNNAME [IF ALIAS IS MENTIONED] **
+**TABLENAME.COLOUMNNAME [IF ALIAS IS NOT MENTIONED]
+  ALIASNAME.COLOUMNNAME [IF ALIAS IS MENTIONED]**
 
 > EXAMPLE-
         SELECT c1.cname AS companyname
@@ -92,8 +94,8 @@ anothe rrecord can be inserted in the same table just by typing ** 'RUN' ** at t
 
 ### Retrieving values of system variable in SQL format
 
-> ** SELECT SYSDATE
-  FROM DUAL; **
+ **SELECT SYSDATE
+  FROM DUAL;**
 
 RESULT-
        SYSDATE
@@ -102,8 +104,8 @@ RESULT-
 
 ### Evaluating expression in SQL
 
-> ** SELECT 3*4+2
-  FROM DUAL; **
+ **SELECT 3*4+2
+  FROM DUAL;**
 
 RESULT-
        3*4+2
