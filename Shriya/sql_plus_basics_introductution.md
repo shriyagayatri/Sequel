@@ -2,7 +2,8 @@
 
 To start SQLPLUS following command is used
 
-** $SQLPLUS **
+
+**$SQLPLUS**
 [$-Operator System Command prompt]
 
 
@@ -137,6 +138,85 @@ Alternatively,
 Oracle recommends using LOB datatype instead of LONG datatype. Maximum of one LONG coloumn can be 
 specified in one table.LONG coloumn can appear only in SET clause of UPDATE statement,INSERT statement
  and SELECT clause.LONG coloumn cannot be used in other clauses,such as WHERE clause.
+ 
+ 
+ ## SET OPERATIONS 
+
+1. ### UNION OPERATION
+
+> Example-
+        SELECT city 
+        FROM company
+        WHERE cname = 'acc'
+        UNION
+        SELECT city 
+        FROM company
+        WHERE cname = 'tata';
+
+
+> SELECT cname,city
+FROM company
+WHERE cname = 'acc'
+UNION
+SELECT city
+FROM company
+WHERE cname ='tata';
+
+The above statement can't be written because the first set produces two parts,while the second set has an element with single part.
+
+In such cases a dummy coloumn can be created
+
+> SELECT cname,city
+FROM company
+WHERE cname = 'acc'
+UNION
+SELECT '',city              //creating dummy variable
+FROM company
+WHERE cname = 'tata';
+
+
+2. ### INTERSECT OPERATION
+
+> Example-
+        SELECT city
+        FROM company
+        WHERE cname = 'acc'
+        INTERSECT
+        SELECT city
+        FROM company
+        WHERE cname = 'tata';
+
+
+3. ### MINUS OPERATION
+
+> SELECT city
+FROM company
+WHERE cname = 'acc'
+MINUS
+SELECT city
+FROM company
+WHERE cname = 'tata';
+
+4. ### IN CLAUSE
+
+SELECT ename,city
+FROM employee
+WHERE ename IN(SELECT ename FROM emp_company WHERE cname = 'acc');
+
+> IN CLAUSE can only be used in 'where' condition and it returns TRUE or FALSE.
+
+
+5. ### EXISTS CLAUSE
+
+The exists clause is used for testing whether a given set is empty or not .It is used in WHERE condition.
+Exists clause of an empty set returns  FALSE,while an nonempty set returns TRUE
+
+> Example-
+        EXISTS {a,b,c,d} = true
+        AND
+        EXISTS {} = false
+
+
 
 
 
