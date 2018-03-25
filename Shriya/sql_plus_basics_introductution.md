@@ -138,5 +138,59 @@ Oracle recommends using LOB datatype instead of LONG datatype. Maximum of one LO
 specified in one table.LONG coloumn can appear only in SET clause of UPDATE statement,INSERT statement
  and SELECT clause.LONG coloumn cannot be used in other clauses,such as WHERE clause.
 
+## AGGREGATE FUNCTIONS
+
+Aggregate functions are used for performing group operations.
+
+> Example-
+        SELECT MAX(salary)
+        FROM emp_company;
+
+> NOTE- Other aggregate functions are mip,sum,avg,count and stdev(standard deviation).
+
+> Example-
+        SELECT MAX(salary)
+        FROM emp_company
+        WHERE cname = 'acc';
+
+
+
+
+### HAVING CLAUSE
+
+> SELECT cname,COUNT(ename)
+FROM emp_company 
+GROUP BY cname
+HAVING count(ename) > 1;
+
+Here,groups are formed on cname and then,for each group,rows with having condition are evaluated.The
+rows that satisfy having condition are displayed.
+
+
+### WITH CLAUSE
+
+> WITH companysalary 
+AS( SELECT cname, SUM(salary) totalsal
+FROM emp_company GROUP BY cname),
+companyAVGsalary AS(SELECT AVG(TOTALsal) AVGsal FROM companysalary)
+SELECT cname,totalsal
+FROM companysalary
+WHERE totalsal > (SELECT AVGsal FROM companyavgsalary);
+
+
+
+### ORDER BY CLAUSE
+
+> SELECT ename,cname
+FROM emp_company
+ORDER BY 1;
+
+NOTE- 1 means first coloumn in select clause
+
+
+SELECT ename,cname
+FROM emp_company
+ORDER BY 1 DEC;
+
 
 
