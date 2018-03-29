@@ -275,8 +275,7 @@ ORDER BY 1 DEC;
 
 ### THE UPDATE STATEMENT
 
-> UPDATE<table name>
-SET column1= ,column2..........
+> UPDATE<table name>SET column1= ,column2..........
 WHERE <condition>
 
 > NOTE-Only one table name can be used with update statement
