@@ -271,6 +271,57 @@ FROM emp_company
 ORDER BY 1 DEC;
 
 
+## UPDATING AND DELETING DATA IN EXISTING TABLE (DML)
+
+### THE UPDATE STATEMENT
+
+> UPDATE<table name>
+SET column1= ,column2..........
+WHERE <condition>
+
+> NOTE-Only one table name can be used with update statement
+
+Example-
+        UPDATE emp_company
+        SET salary = salary * 0.2
+
+In case the user wants to specifya condition with respect to two or more tables then it can be done using an **in** or **exists** clause
+
+> Example-
+        UPDATE emp_company SET salary = salary + 100
+        WHERE ename ='sunil' AND cname = 'acc'
+        AND EXISTS (SELECT e1. ename FROM emp_company e1 WHERE
+        e1.ename = 'anil' AND e1. cname = 'acc');
+
+### THE DELETE STATEMENT
+
+Delete statement detels rows not the entire table
+
+> Example-
+        DELETE employee
+        WHERE city = 'chennai';   //This deletes all the rows of the table
+
+
+
+### DROPPING THE TABLE
+
+This delets entire table
+
+> DROP TABLE employee;
+
+
+### INSERTING DATA USING QUERY
+
+INSERT INTO employee (ename,city)
+SELECT e1.ename, c2.city
+FROM emp_company e1,company c2
+WHERE
+e1.cname = 'acc'
+AND e1.cname= c2.cname;
+
+
+
+
 
 
 
